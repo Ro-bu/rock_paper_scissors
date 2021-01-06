@@ -1,0 +1,1 @@
+This is a rock paper scissors game made for a odin project excercise
