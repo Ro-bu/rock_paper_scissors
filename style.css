@@ -1,0 +1,174 @@
+body {
+    background-color: #070E14;
+    background-image: url("https://www.runescape.com/img/rs3/background-main.jpg");
+    background-repeat: repeat;
+}
+#gameTitle{
+    color: #ffff00;
+    font-family: "Runescape UF";
+    font-size: 4vw;
+    text-shadow: 3px 3px #000000;
+    margin: 30px 0;
+}
+#mainCont{
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 86px;
+}
+#gameCont{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+#startButton{
+    background-color: #281F16;
+    background-image: url("http://smfboards.com/Themes2/userstyles/runescape/Background.jpg");
+    background-repeat: repeat;
+    border-radius: 15px;
+    border-color: #454545;
+    border-width: 2px;
+    padding: 40px 60px;
+    color: white;
+    font-family: "Runescape UF";
+    font-size: 2.5em;
+    box-shadow: inset 0px 0px 20px 10px #0d0d0d;
+    display:none;
+    height: 0px;
+}
+#symbolCont{
+    display: flex;
+    justify-content: space-around;
+    align-items: space-around;
+    flex-wrap: wrap;
+}
+#symbolCont img{
+    height: 200px;
+    width: auto;
+}
+#symbolTitle{
+    font-family: "Runescape UF";
+    font-size: 2em;
+    color: white;
+}
+#rockCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    /* padding: 25px; */
+    background-color: #E2DBC8;
+    box-shadow: inset 0px 0px 20px 10px #C0A886;
+    border-radius: 8%;
+    border: 2px solid #605443;
+    margin: 20px;
+}
+#rockCont:active{
+    box-shadow: inset 0px 0px 20px 10px #936039;
+
+}
+#paperCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    background-color: #E2DBC8;
+    box-shadow: inset 0px 0px 20px 10px #C0A886;
+    border-radius: 8%;
+    border: 2px solid #605443;
+    margin: 20px;
+}
+#paperCont:active{
+    box-shadow: inset 0px 0px 20px 10px #936039;
+}
+#scissorCont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    background-color: #E2DBC8;
+    box-shadow: inset 0px 0px 20px 10px #C0A886;
+    border-radius: 8%;
+    border: 2px solid #605443;
+    margin: 20px;
+}
+#scissorCont:active{
+    box-shadow: inset 0px 0px 20px 10px #936039;
+}
+#mainScoreCont{
+    display: flex;
+    flex-direction: column;
+    font-family: "Runescape UF";
+    align-items: center;
+    padding: 30px 0 0 0;
+}
+#mainScoreCont h3{
+    color: #ffff00;
+    font-size: 2.5em;
+    margin: 40px 0 0 0;
+}
+#subScoreCont{
+    display: flex;
+}
+#playerScoreCont{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    margin: 0 40px;
+}
+#playerScoreCont p{
+    font-size: 2em;
+}
+#playerScoreCont span{
+    font-size: 5em;
+}
+#botScoreCont{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    align-items: center;
+    margin: 0 40px;
+}
+#botScoreCont p{
+    font-size: 2em;
+}
+#botScoreCont span{
+    font-size: 5em;
+}
+#footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    padding: 10px 0px;
+    text-align: center;
+    justify-content: center;
+}
+#footer p{
+    font-family: "Runescape UF";
+    color: white;
+    font-size: 20px;
+}
+#footer a{
+    font-family: "Runescape UF";
+    color: #ffff00;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+@font-face {
+    font-family: 'RuneScape UF';
+    src: url('/fonts/RuneScape-UF.woff2') format('woff2'),
+        url('/fonts/RuneScape-UF.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
