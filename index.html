@@ -3,29 +3,42 @@
     <head>
         <link rel="stylesheet" href="style.css">
         <title>Rock Paper Scissors</title>
+        <script src="script.js"></script> 
     </head>
     <body>
         <div id="mainCont">
                 <h1 id="gameTitle">Rock, Paper, Scissors</h1>
             <div id="gameCont">
-                <!-- <div id="buttonCont">
-                    <button name="startButton" id="startButton">Start Game</button>
-                </div> -->
-                <div id="symbolTitle">
+                <div id="winLoseCont">
+                    <div id="winCont" class="hidden">
+                        <img src="https://static.wikia.nocookie.net/2007scape/images/6/63/Coins_detail.png">
+                        <p>The Victory Is Yours</p>
+                        <img src="https://static.wikia.nocookie.net/2007scape/images/6/63/Coins_detail.png">
+                    </div>
+                    <div id="loseCont" class="hidden">
+                        <img src="https://cdn.runescape.com/assets/img/external/oldschool/2018/newsposts/2018-11-29/skull2.png">
+                        <p>You Have Been Defeated</p>
+                        <img src="https://cdn.runescape.com/assets/img/external/oldschool/2018/newsposts/2018-11-29/skull2.png">
+                    </div>
+                </div>
+                <div id="buttonCont">
+                    <button name="startButton" id="startButton" onclick="game()">Start Game</button>
+                </div>
+                <div id="symbolTitle"  class="hidden">
                     <h3>Take Your Pick</h3>
                 </div>
-                <div id="symbolCont">
+                <div id="symbolCont"  class="hidden">
                     <div id="rockCont">
-                        <img src="https://oldschool.runescape.wiki/images/c/c2/Pet_rock_detail.png">
+                        <img onclick="playWith('rock')" src="https://oldschool.runescape.wiki/images/c/c2/Pet_rock_detail.png">
                     </div>
                     <div id="paperCont">
-                        <img src="https://oldschool.runescape.wiki/images/2/2f/Scrumpled_paper_detail.png">
+                        <img onclick="playWith('paper')" src="https://oldschool.runescape.wiki/images/2/2f/Scrumpled_paper_detail.png">
                     </div>
                     <div id="scissorCont">
-                        <img src="https://oldschool.runescape.wiki/images/d/d8/Shears_detail.png">
+                        <img onclick="playWith('scissors')" src="https://oldschool.runescape.wiki/images/d/d8/Shears_detail.png">
                     </div>
                 </div>
-                <div id="mainScoreCont">
+                <div id="mainScoreCont"  class="hidden">
                     <h3>Current Score</h3>
                     <div id="subScoreCont">
                         <div id="playerScoreCont">

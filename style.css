@@ -36,8 +36,37 @@ body {
     font-family: "Runescape UF";
     font-size: 2.5em;
     box-shadow: inset 0px 0px 20px 10px #0d0d0d;
-    display:none;
-    height: 0px;
+    /* display:none;
+    height: 0px; */
+}
+#winLoseCont{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Runescape UF";
+    color: white;
+    font-size: 4em;
+    flex-direction: column;
+}
+#winLoseCont img{
+    height: 100px;
+    width: auto;
+    padding: 0 30px;
+}
+#winCont{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:row;
+    padding: 0 0 50px 0;
+}
+#loseCont{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction:row;
+    font-size: 0.7em;
+    padding: 0 0 50px 0;
 }
 #symbolCont{
     display: flex;
@@ -148,9 +177,11 @@ body {
     bottom: 0;
     width: 100%;
     display: flex;
-    padding: 10px 0px;
+    padding: 5px 0px;
     text-align: center;
     justify-content: center;
+    background-image: url("https://www.runescape.com/img/rs3/background-main.jpg");
+    border-top: 2px solid #070E14;
 }
 #footer p{
     font-family: "Runescape UF";
@@ -163,6 +194,23 @@ body {
     font-size: 20px;
     text-decoration: none;
 }
+.hidden{
+    visibility:hidden;
+    height: 0px;
+    padding: 0 !important;
+}
+.playerScoreUp{
+    font-size: 7em !important;
+    color: #09583B;
+}
+.botScoreUp{
+    font-size: 7em !important;
+    color: #6F0F09;
+}
+.tie{
+    font-size: 7em !important;
+    color: #777781;
+}
 
 @font-face {
     font-family: 'RuneScape UF';
@@ -171,4 +219,16 @@ body {
     font-weight: normal;
     font-style: normal;
     font-display: swap;
+}
+@media screen and (max-width: 830px){
+    #winLoseCont{
+        font-size: 2em;
+    }
+    #winLoseCont img{
+        height: 50px;
+        width: auto;
+    }
+    #gameTitle{
+        font-size: 2em;
+    }
 }
