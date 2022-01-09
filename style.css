@@ -1,6 +1,6 @@
 body {
     background-color: #070E14;
-    background-image: url("/img/background-main.jpeg");
+    background-image: url("./img/background-main.jpeg");
     background-repeat: repeat;
 }
 #gameTitle{
@@ -26,7 +26,7 @@ body {
 }
 #startButton{
     background-color: #281F16;
-    background-image: url("/img/start-button.jpeg");
+    background-image: url("./img/start-button.jpeg");
     background-repeat: repeat;
     border-radius: 15px;
     border-color: #454545;
@@ -179,7 +179,7 @@ body {
     padding: 5px 0px;
     text-align: center;
     justify-content: center;
-    background-image: url("/img/background-main.jpeg");
+    background-image: url("./img/background-main.jpeg");
     border-top: 2px solid #070E14;
     background-repeat: repeat;
 }
